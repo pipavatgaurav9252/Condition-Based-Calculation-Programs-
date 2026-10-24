@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h3>Voting Eligibility</h3>
+    <div id="root"></div>
+
+    <script>
+        let age = Number(prompt("Enter your age:"));
+
+        if (age >= 18) {
+            document.getElementById("root").innerHTML =
+                "You are eligible to vote.";
+        } else {
+            document.getElementById("root").innerHTML =
+                "You are not eligible to vote.";
+        }
+    </script>
+</body>
+
+</html>

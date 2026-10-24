@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h3>Leap Year Checker</h3>
+    <div id="root"></div>
+
+    <script>
+        let year = Number(prompt("Enter a year:"));
+
+        if (year % 400 == 0 ||
+            (year % 4 == 0 && year % 100 != 0)) {
+            document.getElementById("root").innerHTML =
+                year + " is a Leap Year";
+        } else {
+            document.getElementById("root").innerHTML =
+                year + " is not a Leap Year";
+        }
+    </script>
+</body>
+
+</html>
